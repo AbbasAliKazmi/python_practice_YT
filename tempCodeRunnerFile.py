@@ -1,6 +1,6 @@
-n =10
-# sum=0
-# for i in range(1, n+1):
-#     sum += i
-
-# print("Total numbers of sum is :", sum)
+def calc_sum(a,b):
+#     sum = a + b
+#     print(sum)
+#     return 
+    
+# calc_sum(2,5) 
