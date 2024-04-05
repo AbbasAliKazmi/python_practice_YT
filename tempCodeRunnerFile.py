@@ -1,4 +1,8 @@
-def len_list(list):
-#     print(len(list))
+def int_check(n):
+#     n = int(n)  # Convert input to integer
+#     if n % 2 == 0:
+#         print("Number is Even")
+#     else:
+#         print("Number is odd")
 
-# len_list(heroes)
+# int_check(input("Enter a number: ")) 

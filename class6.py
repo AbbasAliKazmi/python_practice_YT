@@ -60,11 +60,31 @@
 
 #lets practice homework
 
-def int_check(n):
-    n = int(n)  # Convert input to integer
-    if n % 2 == 0:
-        print("Number is Even")
-    else:
-        print("Number is odd")
+# def int_check(n):
+#     n = int(n)  # Convert input to integer
+#     if n % 2 == 0:
+#         print("Number is Even")
+#     else:
+#         print("Number is odd")
 
-int_check(input("Enter a number: "))      
+# int_check(input("Enter a number: "))      
+
+
+#<...........Recusrsion.........>
+
+
+# def show(n):
+#     if(n == 0):
+#         return
+#     print(n)
+#     show(n-1)
+
+# show(50)    
+
+
+def fac(n):
+    if(n == 0  | n == 1):
+        return 1
+    return fac(n-1) *n
+    
+print(fac(3))    
