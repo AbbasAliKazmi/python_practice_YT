@@ -82,9 +82,34 @@
 # show(50)    
 
 
-def fac(n):
-    if(n == 0  | n == 1):
-        return 1
-    return fac(n-1) *n
+# def fac(n):
+#     if(n == 0  | n == 1):
+#         return 1
+#     return fac(n-1) *n
     
-print(fac(3))    
+# print(fac(3))    
+
+
+#lets practice
+# recursive code to add sum of any number
+
+# def calc_sum(n):
+#     if(n == 0):
+#         return 0
+#     return calc_sum(n-1) + n
+    
+# sum = calc_sum(5)
+# print(sum)    
+    
+    
+#code to print all elements through recursive code    
+
+def print_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+
+
+fruits = ["mango", "leche", "banana" , "pineapple"]
+print_list(fruits)
