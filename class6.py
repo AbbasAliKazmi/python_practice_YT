@@ -90,7 +90,7 @@
 # print(fac(3))    
 
 
-#lets practice
+# lets practice
 # recursive code to add sum of any number
 
 # def calc_sum(n):
@@ -102,7 +102,7 @@
 # print(sum)    
     
     
-#code to print all elements through recursive code    
+# code to print all elements through recursive code    
 
 def print_list(list, idx=0):
     if(idx == len(list)):
