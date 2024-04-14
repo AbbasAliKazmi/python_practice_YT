@@ -41,12 +41,17 @@
 
 #how to append(add into previous one) in a file on next line add \n
 
-a = open("democlass7.txt" , "a")
-a.write("\n will add to new line")
-a.close()
+# a = open("democlass7.txt" , "a")
+# a.write("\n will add to new line")
+# a.close()
 
 #how to append(add into previous one) in a file on next line add \n
 
-a = open("democlass7.txt" , "w")
-a.write("\n will add to new line")
-a.close()
+# a = open("democlass7.txt" , "w")
+# a.write("\n will add to new line")
+# a.close()
+
+# how to directly create a new file 
+
+a = open("sample.txt","w")
+a.close
