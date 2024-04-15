@@ -53,5 +53,58 @@
 
 # how to directly create a new file 
 
-a = open("sample.txt","w")
-a.close
+# a = open("sample.txt","w")
+# a.close
+
+#how to open ,read it and write it
+
+# a = open("sample.txt" , "r+")
+# a.write("This is a new text")
+# a.close
+
+#File input and output with syntax
+
+# with open("sample.txt","r") as t:
+#     data=t.read()
+#     print(data)
+
+#<..............Deleting a file........>
+
+
+#to delete a whole file
+
+# import os
+
+# os.remove("sample.txt")
+
+
+#"with" method with a word finding function
+
+# word = "sample"
+# with open("sample.txt", "r") as q:
+#     data = q.read()
+#     if(data.find(word) != -1):
+#         print("Found")
+#     else:
+#         print("Not Found")    
+        
+        
+
+#function of finding a word in a line by line
+
+def  check_for_line():
+    word = "BSCS"
+    data = True
+    line_no = 1
+    with open("sample.txt" , "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1    
+    
+    return -1   
+
+
+check_for_line()     
