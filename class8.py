@@ -46,15 +46,86 @@
 #<............Class and Instance Methods............>
 
 
-class Movies:
-    def __init__(self, name, year):
+# class Movies:
+#     def __init__(self, name, year):
+#         self.name = name
+#         self.year = year
+        
+#     def type(self ):
+#         print("This is a movie", self.name)
+        
+        
+# m1 = Movies("Avengers", 2019)  
+# print(type)          
+# print(m1.name, m1.year)
+
+
+#Lets Practice
+
+# class Student:
+#     def __init__(self, name , marks):
+#         self.name = name
+#         self.marks = marks
+#         print("Student is added")
+        
+#     def get_avg(self):
+#          sum = 0
+#          for value in self.marks:
+#              sum += value
+#          print("Salam", self.name, "Your average is", sum/3)    
+                
+
+# s1=Student("Ali", [90, 80, 70])
+# print(s1.name, s1.marks)
+# s1.get_avg()
+
+
+#<............Static Method/decorator............>decorator allows us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it. 
+#pory function ko leke uska behavior change kr k wapas dedeta h
+
+
+#<................Two pillars of OOPs............>
+
+#Abstraction    chupa hua
+
+# class Car:
+#     def __init__(self):
+#         self.acc= False
+#         self.clutch = False
+#         self.brak= False
+        
+#     def start(self):
+#         self.acc= True
+#         self.clutch = True
+        
+# car1=Car()        
+# car1.start()           
+
+
+#Encapsulation    ek hi k andar sari chezen
+
+
+class Account:
+    def __init__(self, name , acc, balance):
         self.name = name
-        self.year = year
+        self.acc = acc
+        self.balance = balance
         
-    def type(self ):
-        print("This is a movie", self.name)
+    def debit(self, amount):
+        self.balance -= amount
+        print("Rs", amount, "has been debited from your account")
+        print("Hey" , self.name,"Your remaining balance is", self.get_balance())    
+    
+    def credit(self, amount):
+        self.balance += amount
+        print("Rs", amount, "has been credited to your account")
+        print("Hey" , self.name,"Your new balance is", self.get_balance())
         
-        
-m1 = Movies("Avengers", 2019)  
-print(type)          
-print(m1.name, m1.year)
+    def get_balance(self):
+        return self.balance
+    
+c1=Account("Ali", 1234, 50000)
+c1.debit(500)
+c1.credit(200)
+
+
