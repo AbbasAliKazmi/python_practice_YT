@@ -312,7 +312,13 @@ class Complex:
     def __sub__(self, other):                  #__sub__  lagany sy ye dunder function sub k lie use hojata hai 
         newReal=self.real - other.real
         newImag=self.imag - other.imag
-        return Complex(newReal, newImag)     
+        return Complex(newReal, newImag)  
+    
+    def __mul__(self, other):                  #__mul__  lagany sy ye dunder function multiply k lie use hojata hai 
+        newReal=self.real * other.real
+        newImag=self.imag * other.imag
+        return Complex(newReal, newImag)
+       
         
 n1 = Complex(3, 4)
 n1.ShowNum()
