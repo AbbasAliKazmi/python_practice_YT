@@ -296,38 +296,62 @@
 
 #<...................x..................x..................x..................x...............>
 
-class Complex:
-    def __init__(self, real, imag):
-        self.real = real
-        self.imag = imag
+# class Complex:
+#     def __init__(self, real, imag):
+#         self.real = real
+#         self.imag = imag
         
-    def ShowNum(self):
-        print(self.real, "i +", self.imag, "j")
+#     def ShowNum(self):
+#         print(self.real, "i +", self.imag, "j")
         
-    def __add__(self, other):                  #__add__  lagany sy ye dunder function add k lie use hojata hai 
-        newReal=self.real + other.real
-        newImag=self.imag + other.imag
-        return Complex(newReal, newImag)    
+#     def __add__(self, other):                  #__add__  lagany sy ye dunder function add k lie use hojata hai 
+#         newReal=self.real + other.real
+#         newImag=self.imag + other.imag
+#         return Complex(newReal, newImag)    
         
-    def __sub__(self, other):                  #__sub__  lagany sy ye dunder function sub k lie use hojata hai 
-        newReal=self.real - other.real
-        newImag=self.imag - other.imag
-        return Complex(newReal, newImag)  
+#     def __sub__(self, other):                  #__sub__  lagany sy ye dunder function sub k lie use hojata hai 
+#         newReal=self.real - other.real
+#         newImag=self.imag - other.imag
+#         return Complex(newReal, newImag)  
     
-    def __mul__(self, other):                  #__mul__  lagany sy ye dunder function multiply k lie use hojata hai 
-        newReal=self.real * other.real
-        newImag=self.imag * other.imag
-        return Complex(newReal, newImag)
+#     def __mul__(self, other):                  #__mul__  lagany sy ye dunder function multiply k lie use hojata hai 
+#         newReal=self.real * other.real
+#         newImag=self.imag * other.imag
+#         return Complex(newReal, newImag)
        
         
-n1 = Complex(3, 4)
-n1.ShowNum()
+# n1 = Complex(3, 4)
+# n1.ShowNum()
 
-n2 = Complex(5, 6)
-n2.ShowNum()
+# n2 = Complex(5, 6)
+# n2.ShowNum()
 
-n3 = n1 + n2
-n3.ShowNum()
+# n3 = n1 + n2
+# n3.ShowNum()
 
-n4=n1-n2
-n4.ShowNum()
+# n4=n1-n2
+# n4.ShowNum()
+
+def get_real(self):
+    return self.real
+
+def get_imag(self):
+    return self.imag
+
+def get_complex_number(self):
+    return f"{self.real}i + {self.imag}j"
+
+def add_complex_numbers(self, other):
+    new_real = self.real + other.real
+    new_imag = self.imag + other.imag
+    return Complex(new_real, new_imag)
+
+def subtract_complex_numbers(self, other):
+    new_real = self.real - other.real
+    new_imag = self.imag - other.imag
+    return Complex(new_real, new_imag)
+
+def multiply_complex_numbers(self, other):
+    new_real = self.real * other.real
+    new_imag = self.imag * other.imag
+    return Complex(new_real, new_imag)
