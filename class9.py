@@ -332,26 +332,47 @@
 # n4=n1-n2
 # n4.ShowNum()
 
-def get_real(self):
-    return self.real
+#getter function
 
-def get_imag(self):
-    return self.imag
+# def get_real(self):
+#     return self.real
 
-def get_complex_number(self):
-    return f"{self.real}i + {self.imag}j"
+# def get_imag(self):
+#     return self.imag
 
-def add_complex_numbers(self, other):
-    new_real = self.real + other.real
-    new_imag = self.imag + other.imag
-    return Complex(new_real, new_imag)
+# def get_complex_number(self):
+#     return f"{self.real}i + {self.imag}j"
 
-def subtract_complex_numbers(self, other):
-    new_real = self.real - other.real
-    new_imag = self.imag - other.imag
-    return Complex(new_real, new_imag)
+# def add_complex_numbers(self, other):
+#     new_real = self.real + other.real
+#     new_imag = self.imag + other.imag
+#     return Complex(new_real, new_imag)
 
-def multiply_complex_numbers(self, other):
-    new_real = self.real * other.real
-    new_imag = self.imag * other.imag
-    return Complex(new_real, new_imag)
+# def subtract_complex_numbers(self, other):
+#     new_real = self.real - other.real
+#     new_imag = self.imag - other.imag
+#     return Complex(new_real, new_imag)
+
+# def multiply_complex_numbers(self, other):
+#     new_real = self.real * other.real
+#     new_imag = self.imag * other.imag
+#     return Complex(new_real, new_imag)
+
+#Setters function
+
+def set_real(self, value):
+    self.real = value
+
+def set_imag(self, value):
+    self.imag = value
+
+def set_complex_number(self, real, imag):
+    self.real = real
+    self.imag = imag
+
+def set_complex_number_from_string(self, complex_str):
+    parts = complex_str.split("+")
+    real = int(parts[0].strip())
+    imag = int(parts[1].strip().replace("j", ""))
+    self.real = real
+    self.imag = imag
