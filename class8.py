@@ -105,27 +105,52 @@
 #Encapsulation    ek hi k andar sari chezen
 
 
-class Account:
-    def __init__(self, name , acc, balance):
+# class Account:
+#     def __init__(self, name , acc, balance):
+#         self.name = name
+#         self.acc = acc
+#         self.balance = balance
+        
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print("Rs", amount, "has been debited from your account")
+#         print("Hey" , self.name,"Your remaining balance is", self.get_balance())    
+    
+#     def credit(self, amount):
+#         self.balance += amount
+#         print("Rs", amount, "has been credited to your account")
+#         print("Hey" , self.name,"Your new balance is", self.get_balance())
+        
+#     def get_balance(self):
+#         return self.balance
+    
+# c1=Account("Ali", 1234, 50000)
+# c1.debit(500)
+# c1.credit(200)
+
+class Car:
+    def __init__(self, name , model, year):
         self.name = name
-        self.acc = acc
-        self.balance = balance
+        self.model = model
+        self.year = year
+        self.speed = 0
         
-    def debit(self, amount):
-        self.balance -= amount
-        print("Rs", amount, "has been debited from your account")
-        print("Hey" , self.name,"Your remaining balance is", self.get_balance())    
-    
-    def credit(self, amount):
-        self.balance += amount
-        print("Rs", amount, "has been credited to your account")
-        print("Hey" , self.name,"Your new balance is", self.get_balance())
+    def accelerate(self, increment):
+        self.speed += increment
+        print("The", self.name, self.model, "is accelerating. Current speed:", self.speed)
         
-    def get_balance(self):
-        return self.balance
+    def brake(self, decrement):
+        if self.speed >= decrement:
+            self.speed -= decrement
+            print("The", self.name, self.model, "is braking. Current speed:", self.speed)
+        else:
+            print("The", self.name, self.model, "is already stopped.")
+        
+    def get_speed(self):
+        return self.speed
     
-c1=Account("Ali", 1234, 50000)
-c1.debit(500)
-c1.credit(200)
+c1=Car("Honda", "Civic", 2019)
+c1.accelerate(20)
+c1.brake(10)
 
 
