@@ -104,6 +104,17 @@
     
 # code to print all elements through recursive code    
 
+# def print_list(list, idx=0):
+#     if(idx == len(list)):
+#         return
+#     print(list[idx])
+#     print_list(list, idx+1)
+
+
+# fruits = ["mango", "leche", "banana" , "pineapple"]
+# print_list(fruits)
+
+
 def print_list(list, idx=0):
     if(idx == len(list)):
         return
@@ -111,5 +122,5 @@ def print_list(list, idx=0):
     print_list(list, idx+1)
 
 
-fruits = ["mango", "leche", "banana" , "pineapple"]
-print_list(fruits)
+cars = ["lambo", "mercedes", "bugatti" , "bmw"]
+print_list(cars)
