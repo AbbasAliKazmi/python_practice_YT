@@ -72,3 +72,9 @@
 fruits = ["apple", "banana", "cherry"]
 print(fruits)
 print(type(fruits))
+
+
+
+cars = ["bmw" , "mercedes" , "ferrari"]
+print(cars)
+print(types(cars))
