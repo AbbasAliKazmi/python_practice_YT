@@ -193,3 +193,10 @@ while i <= n:
     i +=1
 
 print(sum)
+
+a="Abba"
+b="Ali"
+c="Kazmi"
+
+My_name_is= a+b+c
+print(My_name_is)
